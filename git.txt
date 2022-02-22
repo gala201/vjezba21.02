@@ -1,0 +1,48 @@
+git config --global user.name "Name"
+git config --global user.email <email@domena.com>
+
+Provjera verzije gita (nakon instalacije):
+	git --version
+
+Inicijalizacija git repozitorija:
+	git init
+
+Trenutno stanje repozitorija:
+	git status
+
+Kreiranje fajla u koji upisujem fajlove i foldere koje će git ignorirati --> .gitignore
+
+Kreiranje index.html i scripts.js
+
+Dodavanje fajlova u staging area (korak 2):
+	git add .
+
+Commit izmjena u staging area (korak 3):
+	git commit -m "Initial commit"
+
+
+Povratak na neki od prethodnih commitova:
+	git checkout fef599
+
+Ponovni povratak na master:
+	git checkout master
+
+Kreiranje novog brancha (navigation-create)
+	git checkout -b navigation-create
+
+Kreiranje navigacije u novom branchu
+
+Nakon kreiranja, checkout u master
+
+Dodavanje (mergeanje) navigacije u master:
+	git merge navigation-create
+
+
+Kreiranje GitHub repozitorija, kako bismo lokalni repozitorij digli na GitHub
+1. kreiranje repozitorija na GitHubu
+2. git remote add origin <link na repozitorij>
+3. git push
+
+
+Povlačenje postojećeg GitHub repozitorija:
+	git clone <link na repozitorij>
